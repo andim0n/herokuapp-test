@@ -1,0 +1,26 @@
+{
+  "name": "herokuapp-test",
+  "version": "1.0.0",
+  "description": "testing http://the-internet.herokuapp.com/ with cypress + cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andim0n/herokuapp-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andim0n/herokuapp-test/issues"
+  },
+  "homepage": "https://github.com/andim0n/herokuapp-test#readme",
+  "dependencies": {
+    "cypress": "^7.3.0",
+    "cypress-cucumber-preprocessor": "^4.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
