@@ -9,6 +9,11 @@ Feature: Add or remove elements
         When I click the "Add element" button
         Then I should see "Delete" button
 
-    Scenario: Add 300 Elements
-        When I click the "Add element" button 300 times
-        Then I should see 300 "Delete" buttons
+    Scenario: Add N Elements
+        When I click the "Add element" button 10 times
+        Then I should see 10 "Delete" buttons
+
+    Scenario: Delete element
+        When I click the "Add element" button
+        And I click the "Delete" button
+        Then I should not see "Delete" button

@@ -9,7 +9,14 @@ When(`I click the "Add element" button`, () => {
   cy.get('[onclick="addElement()"]').click()
 })
 
+When(`I click the "Delete" button`, () => {
+  cy.get('#elements > :nth-child(1)').click()
+})
+
 Then(`I should see "Delete" button`, () => {
+  cy.get('#elements > :nth-child(1)').should('be.visible')
+})
+Then(`I should not see "Delete" button`, () => {
   cy.get('#elements > :nth-child(1)').should('be.visible')
 })
 
